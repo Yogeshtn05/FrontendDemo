@@ -1,0 +1,48 @@
+body{
+    background: url('C:\Users\raghu\OneDrive\Desktop\MERN stack\App\app\src\assets\photo-1529156069898-49953e39b3ac.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+}
+.container { 
+    display: grid; 
+    place-items: center;  }
+
+/* styles.css */
+.content-box {
+    background-color: rgb(3, 80, 55);
+    opacity: 0.8;
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px; /* Optional: to give rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: for a subtle shadow effect */
+}
+.form-container { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 10px;
+}
+
+label { min-width: 80px; }
+
+input {
+     padding: 5px;
+     font-size: 16px;
+     
+}
+h1{
+    padding: 5px 10px;
+}
+#slambook{
+    position: 
+    relative;
+    top: -12px;
+    left: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 10px;
+    background-color: transparent;
+    z-index: 1;
+}
