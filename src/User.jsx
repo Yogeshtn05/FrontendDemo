@@ -35,7 +35,7 @@ const User = () => {
   return (
     <div>
       <h1>User</h1>
-      <Link to="/add">Create User</Link>
+      <Link to="/addUser">Create User</Link>
 
       {error && <div style={{ color: 'red' }}>{error}</div>}
 
