@@ -9,7 +9,7 @@ const Apps = () => {
         <BrowserRouter>
     <Routes>
         <Route path="/" element={<User />}/>
-        <Route path="/create" element={<CreateUser />}/>
+        <Route path="/addUser" element={<CreateUser />}/>
         <Route path="/update" element={<UpdateUser />}/>
         </Routes>
         </BrowserRouter>

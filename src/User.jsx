@@ -21,7 +21,7 @@ const User = () => {
       });
   }, []);
 
-  const deleteUser = (id) => {
+  const deleteid = (id) => {
     axios.delete(`https://backenddemo-eb4f.onrender.com/api/user/delete/${id}`)
       .then((results) => {
         console.log("User deleted");
@@ -35,7 +35,7 @@ const User = () => {
   return (
     <div>
       <h1>User</h1>
-      <Link to="/create">Create User</Link>
+      <Link to="/addUser">Create User</Link>
 
       {error && <div style={{ color: 'red' }}>{error}</div>}
 
@@ -56,7 +56,7 @@ const User = () => {
               <td>{user.address}</td>
               <td>
                 <Link to={`/update/${user._id}`}>Update User</Link>
-                <button onClick={() => deleteUser(user._id)}>Delete</button>
+                <button onClick={() => deleteid(user._id)}>Delete</button>
               </td>
             </tr>
           ))}
