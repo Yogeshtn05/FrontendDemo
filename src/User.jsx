@@ -7,7 +7,7 @@ const User = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get('https://backenddemo-a1lk.onrender.com//api/user/fetch')
+    axios.get('https://backenddemo-eb4f.onrender.com/api/user/fetch')
       .then((response) => {
         if (response.status === 200) {
           setUsers(response.data.users); // Make sure your backend sends users in response.data.users
@@ -22,7 +22,7 @@ const User = () => {
   }, []);
 
   const deleteUser = (id) => {
-    axios.delete(` https://backenddemo-a1lk.onrender.com//api/user/delete/${id}`)
+    axios.delete(`https://backenddemo-eb4f.onrender.com/api/user/delete/${id}`)
       .then((results) => {
         console.log("User deleted");
         setUsers(users.filter(user => user._id !== id));
