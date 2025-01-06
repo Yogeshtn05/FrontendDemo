@@ -11,7 +11,7 @@ const CreateUser = () => {
   const submit = (e) => {
     e.preventDefault();
     axios
-      .post('https://backenddemo-eb4f.onrender.com/api/user/addUser', { name, email, address })
+      .post('https://backenddemo-eb4f.onrender.com/api/add', { name, email, address })
       .then((result) => {
         console.log(result);
         navigate('/');
