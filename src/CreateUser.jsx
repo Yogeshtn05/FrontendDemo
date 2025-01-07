@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import './CreateUser.css'; // Import the CSS file
 
 const CreateUser = () => {
   const [name, setName] = useState('');
@@ -11,7 +12,7 @@ const CreateUser = () => {
   const submit = (e) => {
     e.preventDefault();
     axios
-      .post('https://backenddemo-eb4f.onrender.com/api/add', {name,email,address })
+      .post('https://backenddemo-eb4f.onrender.com/api/add', { name, email, address })
       .then((result) => {
         console.log(result);
         navigate('/');
@@ -24,15 +25,18 @@ const CreateUser = () => {
   return (
     <div>
       <form onSubmit={submit}>
-        <label>Name</label>
-        <input type="text" onChange={(e) => setName(e.target.value)} />
-        <br />
-        <label>Email</label>
-        <input type="email" onChange={(e) => setEmail(e.target.value)} />
-        <br />
-        <label>Address</label>
-        <input type="text" onChange={(e) => setAddress(e.target.value)} />
-        <br />
+        <div>
+          <label>Name</label>
+          <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+        </div>
+        <div>
+          <label>Address</label>
+          <input type="text" value={address} onChange={(e) => setAddress(e.target.value)} />
+        </div>
         <button type="submit">Create</button>
       </form>
     </div>
