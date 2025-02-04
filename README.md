@@ -1,8 +1,13 @@
-# React + Vite
+# MERN Stack project for User Management
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The link to the hosted website is : https://frontend-demo-livid.vercel.app/
 
-Currently, two official plugins are available:
+In this project I developed a MERN Stack Webpage for collecting the information about users.
+The users can edit their information also.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+For this application I used MongoDB database for storing the records of the users.
+Using API interfacing the backend will store the records in the MongoDB database.
+user
+The Backend is hosted at Render and this will increase the security of the users inofrmation.
+
+The Frontend is hosted at vercel and the API from Render is interfaced here for updating and retrieving the records.
